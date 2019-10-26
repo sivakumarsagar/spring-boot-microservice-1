@@ -26,6 +26,12 @@ public class DemoappApplication {
 	System.out.print("id is " + paramId);
 	return "Hello from Server with Param : " + paramId + "\n";
 	}	
+	
+	@RequestMapping(value = "/test/{paramId}", method = RequestMethod.GET)
+	public String getTestWithParam(@PathVariable String paramId) {
+	System.out.print("id is " + paramId);
+	return "Hello from Server with Param : " + paramId + "\n";
+	}
 }
 
 
