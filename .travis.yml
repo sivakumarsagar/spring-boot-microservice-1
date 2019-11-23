@@ -9,10 +9,21 @@ install:
 script:
 - ./mvnw clean install
 
+# deploy:
+# - provider: heroku
+#   api_key: $HEROKU_API_KEY
+#   app: java-mircoservice
+#   skip_cleanup: true
+#   on:
+#     branch: master
+
 deploy:
-- provider: heroku
-  api_key: $HEROKU_API_KEY
-  app: java-mircoservice
-  skip_cleanup: true
+- provider: cloudfoundry
+  api: https://api.ng.bluemix.net
+  username: apikey
+  password: $FUNC_ID_BLUEMIX_API_KEY_PUBLIC
+  organization: sudhir.aws.demo@gmail.com
+  space: dev
+  manifest: ./manifest.yaml
   on:
     branch: master
