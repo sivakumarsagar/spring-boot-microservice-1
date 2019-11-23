@@ -26,5 +26,6 @@ deploy:
   space: dev
   region: eu-gb
   manifest: ./manifest.yaml
+  skip_cleanup: true
   on:
     branch: master
