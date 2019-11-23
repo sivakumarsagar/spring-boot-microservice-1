@@ -18,7 +18,7 @@ script:
 #     branch: master
 
 deploy:
-- provider: cloudfoundry
+- provider: bluemixcloudfoundry
   api: https://cloud.ibm.com
   username: apikey
   password: $FUNC_ID_BLUEMIX_API_KEY_PUBLIC
