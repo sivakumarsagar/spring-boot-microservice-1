@@ -24,6 +24,7 @@ deploy:
   password: $FUNC_ID_BLUEMIX_API_KEY_PUBLIC
   organization: sudhir.aws.demo@gmail.com
   space: dev
+  region: eu-gb
   manifest: ./manifest.yaml
   on:
     branch: master
