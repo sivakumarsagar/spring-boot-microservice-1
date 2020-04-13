@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-image: sudhirdockerhub/micro-service
+image: sivakumarsagar/micro-service
 
 imagePullSecrets: []
 nameOverride: ""
