@@ -4,7 +4,7 @@ metadata:
   name: spring-boot-microservice
 build:
   artifacts:
-  - image: sudhirdockerhub/micro-service
+  - image: sivakumarsagar/micro-service
 # deploy:
 #   kubectl:
 #     manifests:
@@ -15,4 +15,4 @@ deploy:
     - name: micro-service-devops
       chartPath: micro-service
       values:
-        image: sudhirdockerhub/micro-service
+        image: sivakumarsagar/micro-service
